@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kiki Zhang | PressReader</title>
+        <link rel="icon" href="img/grad.png">
+
+        <style>
+            *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}section{margin:2rem 1rem}a.nav-button{text-decoration:none;font-size:1.1rem;font-weight:400;color:#000000;padding:0.2rem 0.5rem;display: inline-block}a.nav-button:hover{-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}a.nav-button:focus{color:#63cdda;border-bottom:transparent 1px solid;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
+        </style>
+        
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+            <link rel="stylesheet" href="css/main.css">
+		</noscript>
+
+		<script>
+			(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header sticky" id="myHeader"><div class="header-content">
+            <a href="index.html" id="sticky-logo"><img src="img/logo.svg" alt="logo" id="greylogo"></a>
+            <div class="dropdown">
+                <span class="nav-span"><a class="dropbtn nav-button" href="index.html">Work</a></span>
+
+                <div class="dropdown-content">
+                    <a href="mws.html">UI/UX - Web App</a>
+                    <a href="oyan.html">UI/UX - Mobile</a>
+                    <a href="#" class="work-active">Landing Page Redesign</a>
+                </div>
+            </div>
+            <span class="nav-span"><a href="about.html" class="nav-button">About</a></span>
+            <span class="nav-span"><a href="gallery.html" class="nav-button">Gallery</a></span>
+        </div></div>
+
+        <div class="project-container">
+            <div class="grid-box">
+                <h1 class="title">PressReader for events | Landing Page Redesign</h1>
+                <div class="title subtitle">Redesign for a higher conversion rate.</div>
+                <div class="title subsubtitle">Nov 2019 | Duration: 2 months</div>
+                <div class="title subsubtitle">Role: Designer and Developer</div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Overview</h2>
+                <p>A more creative and engaging landing page is needed to promote more potential users in the events to sign up for a free trial of the PressReader app, specifically speaking, to get higher conversion rates.</p>
+            
+                <div class="grid-box">
+                    <img src="img/8-photo.png" class="project-img" alt="photos at the event">
+                    <p class="img-caption">Figure 1 | Event booth is the lead to the landing page</p>
+                </div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Process</h2>
+
+                <h3 class="p-title">Stage 1</h3>
+                <p>The landing page before was all static, with no animation, which can lose the viewers' interest when browsing. Henceforth, I was responsible to bring life to the page by implementing CSS, JavaScript, and other techniques.</p>
+
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-desktop-old.png" class="project-img" alt="old version desktop" onclick="openModal();currentSlide(1)">
+                    </div>
+                    <p class="img-caption">Figure 1a | Original landing page (desktop view)</p>
+                </div>
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-desktop.png" class="project-img" alt="new version desktop" onclick="openModal();currentSlide(2)">
+                    </div>
+                    <p class="img-caption">Figure 1b | New landing page (desktop view)</p>
+                </div>
+
+                <!-- <div class="sub-grid-box">
+                    <img src="img/8-desktop-old.png" class="project-img img-height" alt="old version desktop">
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/8-desktop.png" class="project-img img-height" alt="new version desktop">
+                </div>
+                <p class="img-caption">Figure 1 | Original landing page and new landing page (desktop view)</p> -->
+                
+                <h3 class="p-title">Stage 2</h3>
+                <p>After researching multiple sign-up landing pages on some design websites, I decided to move the original sign up form from the page bottom to the top. As it is prompting the viewers as soon as they arrive at the page, it can be more clear to them about the offer.</p>
+                
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-mobile-old.png" class="project-img" alt="old version mobile" onclick="openModal();currentSlide(3)">
+                    </div>
+                    <p class="img-caption">Figure 2a | Original landing page (mobile view)</p>
+                </div>
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-mobile.png" class="project-img" alt="new version mobile" onclick="openModal();currentSlide(4)">
+                    </div>
+                    <p class="img-caption">Figure 2b | New landing page (mobile view)</p>
+                </div>
+
+                <!-- <div class="sub-grid-box">
+                    <img src="img/8-mobile-old.png" class="project-img img-height" alt="old version mobile">
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/8-mobile.png" class="project-img img-height" alt="new version mobile">
+                </div>
+                <p class="img-caption">Figure 2 | Original landing page and new landing page (mobile view)</p> -->
+                
+                <h3 class="p-title">Stage 3</h3>
+                <p>One big challenge is to animate icons to be placed on the page. The company’s icons all have gradient but not many SVG tools can animate it. Besides, the icons are already animated in After Effects by other motion graphic designer in the team, so I could save much time by making use of that. In the end, I figured out how to export SVG animation from After Effects and used it on the page by including Lottie.js. I apply hover effects to the animation so it plays when the user hovers to that section, which will not distract the users too much as well as give them a surprise to reveal.
+                </p>
+                <img src="img/8-animation.png" data-src="img/8-animation.gif" class="project-img lazyload blur" alt="icon animation gif lazy"/>
+                <noscript><img src="img/8-animation.gif" class="project-img" alt="icon animation gif"/></noscript>
+                <p class="img-caption">Figure 3 | Animation of icons on hover</p>
+                
+                <h3 class="p-title">Final Stage</h3>
+                <p>After iterative feedbacks and discussions with my supervisor, I made some refinements and finalized the design, and made it a template so that other designers can easily replace copies and images to use for other events in the future. 
+                (<a href="http://letstalk.pressreader.com/plai2019" target="_blank" class="intext-link">url</a>)</p>
+                <img src="img/8-unbounce.png" class="project-img" alt="unbounce interface">
+                <p class="img-caption">Figure 4 | Working interface on Unbounce</p>
+
+                <img src="img/8-interaction.png" data-src="img/8-interaction.gif" class="project-img lazyload blur" alt="page gif lazy"/>
+                <noscript><img src="img/8-interaction.gif" class="project-img" alt="page gif"/></noscript>
+                <p class="img-caption">Figure 5 | Interaction of the whole page</p>
+
+            </div>
+
+            <!-- <div class="grid-box">
+                <h2 class="p-title">Problems and Solutions</h2>
+                <p></p>
+            </div> -->
+
+            <div class="grid-box">
+                <h2 class="p-title">Reflection</h2>
+                <p>The main take-away I had in this project is problem-solving skills and be creative under given constraints. Besides, I also learned to design a website that blends in with the brand’s look and feels.
+                </p>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Other Landing Pages</h2>
+                <div class="sub-grid-box">
+                    <img src="img/8-b2c.png" data-src="img/8-b2c-blackfriday.gif" class="project-img lazyload blur" alt="icon animation gif lazy"/>
+                    <noscript><img src="img/8-b2c-blackfriday.gif" class="project-img" alt="black friday promo landing page"/></noscript>
+                    <p class="img-caption">Figure 6 | Black Friday promotion</p>
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/8-b2c-2.png" data-src="img/8-b2c-fashion.gif" class="project-img lazyload blur" alt="icon animation gif lazy"/>
+                    <noscript><img src="img/8-b2c-fashion.gif" class="project-img" alt="category campaign - fashion landing page"/></noscript>
+                    <p class="img-caption">Figure 7 | Category campaign - Fashion (<a href="http://promo.pressreader.com/fashion-usd" target="_blank" class="intext-link">url</a>)</p>
+                </div>
+                <p>For the B2C campaigns I was involved in, I made landing pages based on another graphic designer's mockup and developed them on Unbounce as well as bring life by adding animation and interaction. The Black Friday campaign was the very first one and we learned a lot from it by the data we collect through heatmap and recording (see Figure 8a below), as well as A/B testing. Such that, we keep the mobile view much condensed and leave only the most important information. In the end, the new category campaign received an improved conversion rate and more users scroll to the bottom of the page (Figure 8b).
+                </p>
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-data-blackfriday.png" class="project-img" alt="data comparison" onclick="openModal();currentSlide(5)">
+                    </div>
+                    <p class="img-caption">Figure 8a | Heatmap of clicks and scroll from Black Friday landing page</p>
+                </div>
+                <div class="sub-grid-box">
+                    <div class="scoll-box view-large">
+                        <img src="img/8-data-movie.png" class="project-img" alt="data comparison" onclick="openModal();currentSlide(6)">
+                    </div>
+                    <p class="img-caption">Figure 8b | Heatmap of clicks and scroll from Category landing page</p>
+                </div>
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides view-small">
+                    <img src="img/8-desktop-old.png" style="width:100%" onclick="closeModal()">
+                  </div>
+              
+                  <div class="mySlides view-small">
+                    <img src="img/8-desktop.png" style="width:100%" onclick="closeModal()">
+                  </div>
+              
+                  <div class="mySlides view-small">
+                    <img src="img/8-mobile-old.png" style="width:100%" onclick="closeModal()">
+                  </div>
+              
+                  <div class="mySlides view-small">
+                    <img src="img/8-mobile.png" style="width:100%" onclick="closeModal()">
+                  </div>
+
+                  <div class="mySlides view-small">
+                    <img src="img/8-data-blackfriday.png" style="width:100%" onclick="closeModal()">
+                  </div>
+
+                  <div class="mySlides view-small">
+                    <img src="img/8-data-movie.png" style="width:100%" onclick="closeModal()">
+                  </div>
+                </div>
+              </div>
+            
+            <div class="grid-box">
+                <a href="gallery.html" class="link-button-dark" onmouseover="this.innerHTML='Collection';" onmouseout="this.innerHTML='View Gallery';">View Gallery</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Designed + Developed by Kiki Zhang</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+        <script src="js/lightbox.js"></script>
+
+        <script src="js/lazysizes.min.js"></script>
+    </body>
+</html>

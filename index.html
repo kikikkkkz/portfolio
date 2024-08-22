@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Kiki Zhang | Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="UI/UX designer and web developer">
+        <meta name="keywords" content="UX, UI, website design, web development, portfolio, Kiki Zhang">
+        <meta name="author" content="Kiki Zhang">
+        <meta property="og:title" content="Kiki Zhang | Portfolio">
+        <meta property="og:description" content="UI/UX designer and web developer">
+        <meta property="og:image" content="https://kikizhang.me/img/AboveTheSky.png">
+        <link rel="icon" href="img/grad.png">
+
+        <style>
+            *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}section{margin:2rem 1rem}a.nav-button{text-decoration:none;font-size:1.1rem;font-weight:400;color:#000000;padding:0.2rem 0.5rem;display: inline-block}a.nav-button:hover{-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}a.nav-button:focus{color:#63cdda;border-bottom:transparent 1px solid;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
+        </style>
+        
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+            <link rel="stylesheet" href="css/main.css">
+		</noscript>
+
+		<script>
+			(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header sticky" id="myHeader"><div class="header-content">
+            <a href="index.html" id="sticky-logo">
+                <img src="img/logo.svg" alt="logo" id="greylogo">
+            </a>
+            <div class="dropdown">
+                <span class="nav-span"><a class="dropbtn nav-button" href="#">Work</a></span>
+                <div class="dropdown-content">
+                    <a href="mws.html">UI/UX - Web App</a>
+                    <a href="oyan.html">UI/UX - Mobile</a>
+                    <a href="pressreader.html">Landing Page Redesign</a>
+                </div>
+            </div>
+            <span class="nav-span"><a href="about.html" class="nav-button">About</a></span>
+            <span class="nav-span"><a href="gallery.html" class="nav-button">Gallery</a></span>
+        </div></div>
+        
+        <div class="main content">
+            <section class="intro">
+                <div class="container">
+                    <div class="about"><h2>I’m Kiki Zhang, <br>a full-stack designer based in Guangzhou. <a href="about.html" class="arrow-btn"><img src="img/arrow-right.svg" alt="link to about page"></a></h2></div>
+                </div>
+            </section>
+            
+            <section class="project">
+                
+                <div class="container">
+                    <div class="flex-project">
+                        <a href="mws.html">
+                            <div class="cover-container">
+                                <img src="img/1-cover.png" alt="cover image for mws" class="image">
+                                <div class="overlay">
+                                    <div class="text"><h3>Desktop UI/UX Design</h3></div>
+                                </div>
+                        </div></a>
+                    </div>
+
+                    <div class="flex-project">
+                        <a href="oyan.html">
+                        <div class="cover-container">
+                            <img src="img/6-cover.png" alt="cover image for oyan" class="image">
+                            <div class="overlay">
+                                <div class="text"><h3>Mobile UI/UX Design</h3></div>
+                            </div>
+                        </div></a>
+                    </div>
+                    
+                </div>
+
+                <div class="container">
+                    
+                    <div class="flex-project">
+                        <a href="pressreader.html">
+                            <div class="cover-container">
+                                <img src="img/8-cover.png" alt="cover image for pressreader" class="image">
+                                <div class="overlay">
+                                    <div class="text"><h3>Landing Page Redesign</h3></div>
+                                </div>
+                        </div></a>
+                    </div>
+
+                    <div class="flex-project">
+                        <!-- <a href="brilliant.html">
+                        <div class="cover-container">
+                            <img src="img/1-cover.png" alt="cover image for brilliant solutions" class="image">
+                            <div class="overlay">
+                                <div class="text"><h3>Visual Design</h3></div>
+                            </div>
+                        </div></a> -->
+                    </div>
+
+                </div>
+            
+            </section>
+        </div>
+        
+        <footer>
+            <p>Designed + Developed by Kiki Zhang</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+        <script src="js/lazysizes.min.js"></script>
+    </body>
+</html>

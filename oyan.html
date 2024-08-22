@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kiki Zhang | OYAN</title>
+        <link rel="icon" href="img/grad.png">
+
+        <style>
+            *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}section{margin:2rem 1rem}a.nav-button{text-decoration:none;font-size:1.1rem;font-weight:400;color:#000000;padding:0.2rem 0.5rem;display: inline-block}a.nav-button:hover{-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}a.nav-button:focus{color:#63cdda;border-bottom:transparent 1px solid;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
+        </style>
+        
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+            <link rel="stylesheet" href="css/main.css">
+		</noscript>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="js/js.js"></script> -->
+
+		<script>
+			(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    </head>
+
+    <!-- <body onload="passWord();"> -->
+    <body>
+        <div class="header sticky" id="myHeader"><div class="header-content">
+            <a href="index.html" id="sticky-logo"><img src="img/logo.svg" alt="logo" id="greylogo"></a>
+            <div class="dropdown">
+                <span class="nav-span"><a class="dropbtn nav-button" href="index.html">Work</a></span>
+                <div class="dropdown-content">
+                    <a href="mws.html">UI/UX - Web App</a>
+                    <a href="#" class="work-active">UI/UX - Mobile</a>
+                    <a href="pressreader.html">Landing Page Redesign</a>
+                </div>
+            </div>
+            <span class="nav-span"><a href="about.html" class="nav-button">About</a></span>
+            <span class="nav-span"><a href="gallery.html" class="nav-button">Gallery</a></span>
+        </div></div>
+
+        <div class="project-container">
+            <!-- <div class="blur-filter"> -->
+            <div class="grid-box">
+                <h1 class="title">OYAN | UI/UX Design</h1>
+                <div class="title subtitle">A mobile app designed to help coordinate safe protests</div>
+                <div class="title subsubtitle">July 2019 | Duration: 5 weeks</div>
+                <div class="title subsubtitle">Role: UI Designer and Prototyping</div>
+                <div class="title subsubtitle">Team: Alina Lapushkina, Claire Huang, Kenzhe Omarali</div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Overview</h2>
+                <p>OYAN is a mobile app we designed for a course on Interface Design. OYAN supports the protesters by keeping them informed and helping them coordinate the demonstrations using built-in GPS and Bluetooth technologies. In a team of four, I was responsible for UI design, interaction design, user testing, and prototyping.</p>
+                <img src="img/6-ui.png" class="project-img" alt="UIs">
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Why this particular context?</h2>
+                <div class="sub-grid-box">
+                    <p>Protests play an important part in the civil, political, economic, social and cultural life of all societies. They inspire positive social change and the advancement of human rights in all parts of the world.</p>
+
+                    <ul>
+                    <p><li>Protests are very unpredictable. They can expand and start moving through the streets. They can get very violent very quickly. You never know what to expect.
+                    </li></p>
+                    <p><li>When organizing and participating in the protests, people risk becoming easy targets as their identity could be easily uncovered.</li></p>
+                
+                </ul></div>
+                <div class="sub-grid-box">
+                    <img src="img/6-why.png" class="project-img" alt="news">
+                </div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Research</h2>
+                <p>To derive the application persona and the journey map, we conducted several interviews with the people that come from Kazakhstan and Hong Kong. At the current moment, these two regions are experiencing a lot of political changes, which became a reason for mass protest outbreaks and arrests. From the interviews, we drew some insights as following.</p>
+
+                <h3 class="p-title">Safety Concern</h3>
+                <p>Protests are very unpredictable. They can expand and start moving through the streets. They can get very violent very quickly. You never know what to expect.</p>
+                <h3 class="p-title">Privacy Issue</h3>
+                <p>When organizing and participating in the protests, people risk becoming easy targets as their identity could be easily uncovered.</p>
+
+                <h2 class="p-title">Design Opportunities</h2>
+
+                <h3 class="p-title">Providing a Platform</h3>
+                <p>Support protesters' by providing a platform to coordinate demonstrations, keep each other updated and safe.</p>
+                <h3 class="p-title">Keep Anonymity</h3>
+                <p>Leverage anonymity to preserve protesters’ identities and personal information. Remove leaders in the creation of protests to decentralize power and avoid being targeted.</p>
+
+                <!-- <img src="img/5-c.png" data-src="img/5-c.gif" class="project-img lazyload blur" alt="ui gif lazy"/>
+                <noscript><img src="img/5-c.gif" class="project-img" alt="ui gif"/></noscript> -->
+
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Synthesizing Result</h2>
+                <img src="img/6-persona.png" class="project-img" alt="user persona">
+                <!-- <img src="img/6-journey.png" class="project-img" alt="user journey"> -->
+            </div>
+
+
+            <div class="grid-box">
+                <h2 class="p-title">Design Iteration</h2>
+                <h3 class="p-title">Wireframes and Mockups</h3>
+                <p>To finalize the application workflow and design, our team went through numerous iterations. At first, to understand and evaluate planned functionalities, we created preliminary sketches and grey box wireframes. Then, we started refining our visual direction and creating interactive-prototypes of the interface workflows for further testing.</p>
+                <img src="img/6-olduis.png" class="project-img" alt="old user interfaces">
+                <!-- <p class="img-caption">Greybox UIs and mockups</p> -->
+
+                <h3 class="p-title">User Testing</h3>
+                <!-- <p>We tested the prototype with 5 potential users, 3 industry professionals (UX/UI Designers), SFU IAT 334 teaching staffs through usability testing, think aloud walkthrough, A/B test of two different workflows, and post-test interview. We faced some challenges and problems.</p> -->
+                <img src="img/6-testing.png" class="project-img" alt="user testing">
+
+                <div class="grid-box">
+                <h3 class="p-title">Challenges</h3>
+                <h4 class="p-title">Anonymity = unreliability?</h4>
+                <div class="sub-grid-box">
+                    <p>Problem: Since the system does not require user login, some users may post some untrue messages to cause chaos.</p>
+                    <p>Solution: Report system that allows users to report falsified content and fake alert to keep information trustworthy in the community. Users can also upvote messages to make helpful ones appear first to others.</p>
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/6-report.png" class="project-img" alt="report ui" style="max-height: 28rem; width: auto">
+                </div>
+
+                <h4 class="p-title">Report safety under dangerous situation?</h4>
+                <div class="sub-grid-box">
+                    <p>Problem: The users may likely to flew away from the dangerous area and later want to submit a safety report, they can only submit based on their current location.</p>
+                    <p>Solution: Added a time frame slider to allow users to report any safety issues from now to 30 minutes ago, and the system will locate their position based on GPS at that moment.</p>
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/6-safety.png" class="project-img" alt="safety report ui" style="max-height: 28rem; width: auto">
+                </div>
+                
+            </div>
+
+                <h3 class="p-title">Refinement</h3>
+                <p>Based on the user testing feedback and additional research, we created the final application style guide and refined existing journey map and workflows to inform and expand on OYAN’s visual direction and functionalities.</p>
+                <img src="img/6-styleguide.png" class="project-img" alt="style guide">
+                <div class="sub-grid-box">
+                    <img src="img/6-journey-old.png" class="project-img" alt="user journey">
+                    <p class="img-caption">Older version of user journey</p>
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/6-journey.png" class="project-img" alt="user journey">
+                    <p class="img-caption">Final version of user journey</p>
+                </div>
+
+                <img src="img/6-workflow.png" class="project-img" alt="user workflow">
+                <!-- <p class="img-caption">User workflow</p> -->
+
+            </div>
+            
+            <div class="grid-box">
+                <h2 class="p-title">Final Design</h2>
+                <img src="img/6-main.png" class="project-img" alt="user interfaces">
+                <p class="img-caption">Main features ( <a href="http://www.sfu.ca/~kexinh/IAT334/home.html" class="intext-link" target="_blank">view GIFs</a> )</p>
+
+                <h3 class="p-title">Try out the interactive prototype</h3>
+                <iframe src="https://share.protopie.io/gDne33zPXbK" frameborder="0" sandbox="allow-scripts allow-popups allow-forms allow-same-origin" style="width:100%; min-height: 90vh; border-radius: 1px; pointer-events: auto;"></iframe>
+                <!-- <p class="img-caption">Interactive prototype</p> -->
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Future Opportunities</h2>
+                <p>The context of our application did not allow us to conduct user testing in a realistic setting. Instead, we tested and interviewed political activists and people that know how protests operate. Thus, we believe that further research with real protest participants would be a great opportunity to expand on the application’s performance.</p>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Reflection</h2>
+                <p>In this project, I was required to jump out of my cultural background and study into the subject area and target users as a designer. Despite the political factors, I was largely involved in the design and refinement of user workflow as well as designing micro-interaction to elaborate the user experience. As the leader of prototype making, I managed to use Figma and ProtoPie to produce a product that is realistic enough for users to input data like text or images.</p>
+            </div>
+            
+            
+            <h3 class="p-title">“We support liberty and freedom of speech, but we have zero tolerance for any violent protests.”</h3>
+
+            <!-- </div> -->
+            <br>
+
+            <div class="grid-box">
+                <a href="pressreader.html" class="link-button-dark" onmouseover="this.innerHTML='PressReader';" onmouseout="this.innerHTML='Next Project';">Next Project</a>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>Designed + Developed by Kiki Zhang</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+
+        <script src="js/lazysizes.min.js"></script>
+        
+    </body>
+</html>

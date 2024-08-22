@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kiki Zhang | MWS</title>
+        <link rel="icon" href="img/grad.png">
+
+        <style>
+            *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}section{margin:2rem 1rem}a.nav-button{text-decoration:none;font-size:1.1rem;font-weight:400;color:#000000;padding:0.2rem 0.5rem;display: inline-block}a.nav-button:hover{-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}a.nav-button:focus{color:#63cdda;border-bottom:transparent 1px solid;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
+        </style>
+        
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+            <link rel="stylesheet" href="css/main.css">
+		</noscript>
+
+		<script>
+			(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="header sticky" id="myHeader"><div class="header-content">
+            <a href="index.html" id="sticky-logo"><img src="img/logo.svg" alt="logo" id="greylogo"></a>
+            <div class="dropdown">
+                <span class="nav-span"><a class="dropbtn nav-button" href="index.html">Work</a></span>
+                <div class="dropdown-content">
+                    <a href="#" class="work-active">UI/UX - Web App</a>
+                    <a href="oyan.html">UI/UX - Mobile</a>
+                    <a href="pressreader.html">Landing Page Redesign</a>
+                </div>
+            </div>
+            <span class="nav-span"><a href="about.html" class="nav-button">About</a></span>
+            <span class="nav-span"><a href="gallery.html" class="nav-button">Gallery</a></span>
+        </div></div>
+
+        <div class="project-container">
+            <div class="grid-box">
+                <h1 class="title">MWS @X Bank | UI/UX Design</h1>
+                <div class="title subtitle">ToB staff facing web application</div>
+                <div class="title subsubtitle">~1.5 months</div>
+                <div class="title subsubtitle">Role: UI/UX Designer</div>
+                <div class="title subsubtitle">Team: MWS design team + Project team</div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Overview</h2>
+                <p>MyWorkspace is a new staff frontline tooling platform, with a core set of capabilities for the majority of our servicing needs, and a comprehensive customer landing page that acts as a single navigation point to functionalities and existing applications in place.</p>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Process</h2>
+                
+                <div class="grid-box">
+                    <h3 class="p-title">Background</h3>
+                    <p>Today: Too many windows/too many systems; fragmented experience for staff.<br>
+                    Future and now: MWS is getting live by market and business according to the roadmap. We are building new future-proofing staff features (Initiatives) that can be part of the MWS.</p>
+                    <!-- <p>Project intakes are based upon requirements. Designers are assigned to specific journeys/functions to be used by the target users in the scaled market. I was involved in several projects ranging from foreign exchange, account opening, customer alert, etc., which were delivered in mainland China, Hong Kong, and GBA markets.</p> -->
+                    <img src="img/1-a.png" class="project-img" alt="user interface">
+                    <p class="img-caption">Today's banking systems</p>
+                </div>
+                
+                <div class="grid-box">
+                    <h3 class="p-title">Project Context</h3>
+                    <p>DXX is one of the functions to be built in MWS. It allows staff to perform an end-to-end foreign exchange journey and make the deal with customer under a confirmed exchange rate.</p>
+                </div>
+
+                <div class="grid-box">
+                    <h3 class="p-title">Design Process</h3>
+                    <h4 class="p-title">Identify problem</h4>
+                    <p>Currently, branch staffs need to input transaction detail in [legacy system name], and check the real-time exchange rate in another system, the rate might vary when the transaction proceeds, which is not promising to the customer.
+                        <br>With the new implementation, branch staff can confirm the rate with the customer and complete the transaction while the rate is still valid.</p>
+                    
+                    <h4 class="p-title">Scenario</h4>
+                    <img src="img/1-b.png" class="project-img" alt="user interface">
+
+                    <h4 class="p-title">User flow</h4>
+                    <img src="img/1-c.png" class="project-img" alt="user interface">
+
+                    <h4 class="p-title">Challenges</h4>
+                    <ul class="p-list">
+                        <li>Old system ui vs. new browser standard</li>
+                        <li>To minimize complexity for complex tasks (poor device and network connection in real life)</li>
+                        <li>Various error case handling</li>
+                    </ul>
+
+                    <p><b>Pattern discovery on complex form and layout structure</b>
+                        <br>Researched and compared 3 options of form layout structure across multiple bank platforms, combined with usability testing with 5 users, and draw the following insights:
+                    </p>
+                    <img src="img/1-e.png" class="project-img" alt="user interface">
+
+                    <h4 class="p-title">A/B testing</h4>
+                    <img src="img/1-d.png" class="project-img" alt="user interface">
+                    <img src="img/1-f.png" class="project-img" alt="user interface">
+                </div>
+            </div>
+            
+            <div class="grid-box">
+                <h2 class="p-title">Final UI</h2>
+                <h3 class="p-title">***Due to confidential consent, details are to be provided in the interview. Thanks for your understanding.***</h3>
+                <img src="img/1-g.png" class="project-img" alt="user interface">
+            </div>
+
+            <div class="grid-box">
+                <a href="oyan.html" class="link-button-dark" onmouseover="this.innerHTML='Oyan';" onmouseout="this.innerHTML='Next Project';">Next Project</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Designed + Developed by Kiki Zhang</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+
+        <script src="js/lazysizes.min.js"></script>
+
+    </body>
+</html>
