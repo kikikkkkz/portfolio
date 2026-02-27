@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kiki Zhang | Savvy</title>
+        <link rel="icon" href="img/grad.png">
+
+        <style>
+            *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{margin:0;padding:0}section{margin:2rem 1rem}a.nav-button{text-decoration:none;font-size:1.1rem;font-weight:400;color:#000000;padding:0.2rem 0.5rem;display: inline-block}a.nav-button:hover{-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}a.nav-button:focus{color:#63cdda;border-bottom:transparent 1px solid;-webkit-transition:color 0.3s;-o-transition:color 0.3s;transition:color 0.3s}
+        </style>
+        
+        <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+            <link rel="stylesheet" href="css/main.css">
+		</noscript>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- <script src="js/js.js"></script> -->
+
+		<script>
+			(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i+=1){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
+
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    </head>
+
+    <!-- <body onload="passWord();"> -->
+    <body>
+        <div class="header sticky" id="myHeader"><div class="header-content">
+            <a href="index.html" id="sticky-logo"><img src="img/logo.svg" alt="logo" id="greylogo"></a>
+            <div class="dropdown">
+                <span class="nav-span"><a class="dropbtn nav-button" href="index.html">Work</a></span>
+                <div class="dropdown-content">
+                    <a href="mws.html">ToB UI/UX - Web App</a>
+                    <a href="savvy.html" class="work-active">ToB UI/UX - Mobile</a>
+                    <a href="oyan.html">Student Project UI/UX - Mobile</a>
+                    <a href="pressreader.html">Landing Page Redesign</a>
+                </div>
+            </div>
+            <span class="nav-span"><a href="about.html" class="nav-button">About</a></span>
+            <span class="nav-span"><a href="gallery.html" class="nav-button">Gallery</a></span>
+        </div></div>
+
+        <div class="project-container">
+            <!-- <div class="blur-filter"> -->
+            <div class="grid-box">
+                <h1 class="title">Savvy @Beverage Brand</h1>
+                <div class="title subtitle">ToB staff facing mobile application</div>
+                <div class="title subsubtitle">~4 weeks</div>
+                <div class="title subsubtitle">Role: Ul Designer</div>
+                <div class="title subsubtitle">Team: US UX design team + Project team</div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Overview</h2>
+                <!-- <p>SAVVY is an advanced mobile platform that makes it easier for employees to manage accounts, write orders, deliver product, merchandise shelves, and lead teams.</p> -->
+                <img src="img/0-a.png" class="project-img" alt="UIs">
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Background</h2>
+                <p>Today: The legacy app is outdated and does not unite either the data or the frontlines.<br>
+                <br>Future and now: Savvy is taking a bold step in leveraging digital technology to sharpen their competitive edge, by making it easier for frontline staffs to manage duties.</p>
+                <img src="img/0-b.png" class="project-img" alt="key points">
+                <!-- <h3 class="p-title">“An advanced platform that amplifies your expertise.”</h3> -->
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Project Context</h2>
+                <div class="sub-grid-box">
+                    <p>Adjust truck inventory is one of the functions to be built in Savvy. It allows delivery drivers to </p>
+                    <ul>
+                        <p><li>View and update truck inventory easily</li></p>
+                        <p><li>Manage discrepancies between planned and actual loads</li></p>
+                        <p><li>Track inventory changes throughout delivery routes</li></p>
+                </div>
+                <div class="sub-grid-box">
+                    <img src="img/0-c.png" class="project-img" alt="image">
+                </div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Problem</h2>
+                <div class="sub-grid-box">
+                    <img src="img/0-d.png" class="project-img" alt="image">
+                </div>
+                <div class="sub-grid-box">
+                    <p>Delivery drivers needed an efficient solution to manage truck inventory, ensure accurate deliveries, and reconcile stock levels in real-time, all while handling packed stocks and packages on the go. 
+                    <br>The challenge was to design an interface that seamlessly integrated with Savvy’s design guidelines and fit within their existing operational flow.</p>
+                </div>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Key Features</h2>
+                <ul>
+                    <p><li>Intuitive product selection via categories and search</li></p>
+                    <p><li>Quick quantity input using a number pad interface</li></p>
+                    <p><li>Real-time inventory updates</li></p>
+                    <p><li>Integration with pre-planned delivery loads</li></p>
+                </ul>
+                <img src="img/0-e.png" class="project-img" alt="ui">
+            </div>
+            
+            <div class="grid-box">
+                <h2 class="p-title">Results</h2>
+                <p>The flow streamlined inventory management, reduced errors, and improved delivery accuracy. It provided real-time data for both drivers and management, enhancing overall operational efficiency.</p>
+            </div>
+
+            <div class="grid-box">
+                <h2 class="p-title">Key Takeaways</h2>
+                <ul>
+                    <p><li>Designing for multiple user personas in a single app requires careful consideration of role-specific tasks while maintaining a unified user experience. The persona-switching feature can simplify complex workflows for varied user needs.</li></p>
+                    <p><li>ToB applications can still prioritize an engaging and intuitive user experience that balances both business goals and usability.</li></p>
+                </ul>
+            </div>
+            
+            <div class="grid-box">
+                <h2 class="p-title">Future Opportunities</h2>
+                <p>Engage earlier in the product development cycle to have greater influence over strategic decisions, ensuring the design vision aligns with business objectives and technical feasibility from the start.</p>
+                <p>Treat B2B users as valued customers, placing emphasis on usability and delight in their workflows. Future improvements could focus on deeper user research to uncover additional pain points and opportunities for improving daily operational efficiency.</p>
+            </div>
+
+            <!-- </div> -->
+            <br>
+
+            <div class="grid-box">
+                <a href="pressreader.html" class="link-button-dark" onmouseover="this.innerHTML='PressReader';" onmouseout="this.innerHTML='Next Project';">Next Project</a>
+            </div>
+            
+        </div>
+
+        <footer>
+            <p>Designed + Developed by Kiki Zhang</p>
+        </footer>
+        
+        <script src="js/main.js"></script>
+
+        <script src="js/lazysizes.min.js"></script>
+        
+    </body>
+</html>
