@@ -1,20 +1,22 @@
 var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
 var logo = document.getElementById("sticky-logo");
 
-header.style.textAlign = "right";
-header.style.backgroundColor = "rgba(255,255,255,0.72)";
-logo.style.display = "block";
+if (header) {
+  var sticky = header.offsetTop;
+  header.style.textAlign = "right";
+}
+if (logo) {
+  logo.style.display = "block";
+}
          
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
+  if (!header) return;
   if (window.pageYOffset > sticky) {
-    header.style.boxShadow = "0 0.05rem 0.5rem rgba(0, 0, 0, 0.15)";
-    // header.style.backdropFilter = "saturate(180%) blur(16px)";
+    header.classList.add("scrolled");
   } else {
-    header.style.boxShadow = "none";
-    // header.style.backdropFilter = "none";
+    header.classList.remove("scrolled");
   }
 }
 
@@ -22,6 +24,7 @@ var greylogo = document.getElementById("greylogo");
 window.onload = function() {changeLogo()};
 window.onresize = function() {changeLogo()};
 function changeLogo() {
+  if (!greylogo) return;
   var w = window.innerWidth;
   if (w < 495) {
     // greylogo.style.width = "1.6rem";
@@ -31,3 +34,6 @@ function changeLogo() {
     greylogo.src = "img/logo.svg";
   }
 }
+
+// Ensure correct initial header state on load
+myFunction();
