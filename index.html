@@ -30,7 +30,7 @@
         <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="home">
         <div class="header sticky" id="myHeader"><div class="header-content">
             <a href="index.html" id="sticky-logo">
                 <img src="img/logo.svg" alt="logo" id="greylogo">
@@ -49,71 +49,84 @@
         </div></div>
         
         <div class="main content">
-            <section class="intro">
-                <div class="container">
-                    <div class="about"><h2>I’m Kiki Zhang, <br>a full-stack designer based in Guangzhou. <a href="about.html" class="arrow-btn"><img src="img/arrow-right.svg" alt="link to about page"></a></h2></div>
+            <section class="home-hero" id="home-hero">
+                <div class="home-hero-inner">
+                    <div class="home-hero-copy">
+                        <div class="home-eyebrow">Design x Engineering</div>
+                        <h2 class="home-headline">
+                            I’m Kiki Zhang — <br>
+                            <span class="home-headline-accent">a full‑stack designer</span>
+                            crafting product experiences with a tech edge.
+                        </h2>
+                        <p class="home-subhead">
+                            UI/UX + prototyping + front‑end implementation. I design systems that look sharp, feel fast, and ship cleanly.
+                        </p>
+
+                        <div class="home-cta-row">
+                            <a href="mws.html" class="home-cta-primary">View case studies</a>
+                            <a href="about.html" class="home-cta-secondary">About me</a>
+                        </div>
+                    </div>
+
+                    <div class="home-hero-preview" aria-hidden="true">
+                        <div class="home-orb orb-a"></div>
+                        <div class="home-orb orb-b"></div>
+                        <div class="home-orb orb-c"></div>
+                        <div class="home-preview-card">
+                            <div class="home-preview-grid"></div>
+                            <div class="home-typing">
+                                <div class="home-typing-label">Typing UX laws</div>
+                                <div class="home-typing-row">
+                                    <span class="home-typing-prefix">›</span>
+                                    <span id="uxlaw-typing" class="home-typing-text"></span>
+                                    <span class="home-caret" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             
-            <section class="project">
-                
-                <div class="container">
-                    <div class="flex-project">
-                        <a href="mws.html">
+            <section class="project home-projects">
+                <div class="home-projects-inner">
+                    <div class="home-projects-grid">
+                        <a class="home-project-link" href="mws.html">
                             <div class="cover-container">
                                 <img src="img/1-cover.png" alt="cover image for mws" class="image">
                                 <div class="overlay">
                                     <div class="text"><h3>ToB Desktop UI/UX Design</h3></div>
                                 </div>
-                        </div></a>
-                    </div>
+                            </div>
+                        </a>
 
-                    <div class="flex-project">
-                        <a href="savvy.html">
+                        <a class="home-project-link" href="savvy.html">
                             <div class="cover-container">
                                 <img src="img/0-cover.png" alt="cover image for savvy" class="image">
                                 <div class="overlay">
                                     <div class="text"><h3>ToB Mobile UI/UX Design</h3></div>
                                 </div>
-                        </div></a>
-                    </div>
-    
-                </div>
-
-                <div class="container">
-                    
-                    <div class="flex-project">
-                        <a href="oyan.html">
-                        <div class="cover-container">
-                            <img src="img/6-cover.png" alt="cover image for oyan" class="image">
-                            <div class="overlay">
-                                <div class="text"><h3>Mobile UI/UX Design</h3></div>
                             </div>
-                        </div></a>
-                    </div>
+                        </a>
 
-                    <div class="flex-project">
-                        <a href="pressreader.html">
+                        <a class="home-project-link" href="oyan.html">
+                            <div class="cover-container">
+                                <img src="img/6-cover.png" alt="cover image for oyan" class="image">
+                                <div class="overlay">
+                                    <div class="text"><h3>Mobile UI/UX Design</h3></div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="home-project-link" href="pressreader.html">
                             <div class="cover-container">
                                 <img src="img/8-cover.png" alt="cover image for pressreader" class="image">
                                 <div class="overlay">
                                     <div class="text"><h3>Landing Page Redesign</h3></div>
                                 </div>
-                        </div></a>
-                    </div>
-
-                    <!-- <div class="flex-project"> -->
-                        <!-- <a href="brilliant.html">
-                        <div class="cover-container">
-                            <img src="img/1-cover.png" alt="cover image for brilliant solutions" class="image">
-                            <div class="overlay">
-                                <div class="text"><h3>Visual Design</h3></div>
                             </div>
-                        </div></a> -->
-                    <!-- </div> -->
-
+                        </a>
+                    </div>
                 </div>
-            
             </section>
         </div>
         
@@ -123,5 +136,124 @@
         
         <script src="js/main.js"></script>
         <script src="js/lazysizes.min.js"></script>
+        <script>
+            (function () {
+                var hero = document.getElementById("home-hero");
+                if (!hero) return;
+
+                var cards = document.querySelectorAll(".cover-container");
+                var raf = 0;
+                var last = { x: 0, y: 0 };
+
+                function onMove(e) {
+                    var r = hero.getBoundingClientRect();
+                    var x = (e.clientX - r.left) / r.width;
+                    var y = (e.clientY - r.top) / r.height;
+                    last.x = Math.max(0, Math.min(1, x));
+                    last.y = Math.max(0, Math.min(1, y));
+                    if (raf) return;
+                    raf = requestAnimationFrame(function () {
+                        raf = 0;
+                        hero.style.setProperty("--mx", String(last.x));
+                        hero.style.setProperty("--my", String(last.y));
+                    });
+                }
+
+                function tilt(el, e) {
+                    var rect = el.getBoundingClientRect();
+                    var dx = (e.clientX - rect.left) / rect.width - 0.5;
+                    var dy = (e.clientY - rect.top) / rect.height - 0.5;
+                    var rx = (-dy * 7).toFixed(2);
+                    var ry = (dx * 10).toFixed(2);
+                    el.style.setProperty("--rx", rx + "deg");
+                    el.style.setProperty("--ry", ry + "deg");
+                }
+
+                function resetTilt(el) {
+                    el.style.setProperty("--rx", "0deg");
+                    el.style.setProperty("--ry", "0deg");
+                }
+
+                hero.addEventListener("mousemove", onMove, { passive: true });
+                hero.addEventListener("mouseleave", function () {
+                    hero.style.setProperty("--mx", "0.5");
+                    hero.style.setProperty("--my", "0.35");
+                });
+
+                cards.forEach(function (c) {
+                    c.classList.add("tilt");
+                    c.addEventListener("mousemove", function (e) { tilt(c, e); }, { passive: true });
+                    c.addEventListener("mouseleave", function () { resetTilt(c); });
+                });
+
+                var target = document.getElementById("uxlaw-typing");
+                if (!target) return;
+
+                var laws = [
+                    "Aesthetic-Usability Effect",
+                    "Choice Overload",
+                    "Chunking",
+                    "Cognitive Bias",
+                    "Cognitive Load",
+                    "Doherty Threshold",
+                    "Fitts’s Law",
+                    "Flow",
+                    "Goal-Gradient Effect",
+                    "Hick’s Law",
+                    "Jakob’s Law",
+                    "Law of Common Region",
+                    "Law of Proximity",
+                    "Law of Prägnanz",
+                    "Law of Similarity",
+                    "Law of Uniform Connectedness",
+                    "Mental Model",
+                    "Miller’s Law",
+                    "Occam’s Razor",
+                    "Paradox of the Active User",
+                    "Pareto Principle",
+                    "Parkinson’s Law",
+                    "Peak-End Rule",
+                    "Postel’s Law",
+                    "Selective Attention",
+                    "Serial Position Effect",
+                    "Tesler’s Law",
+                    "Von Restorff Effect",
+                    "Working Memory",
+                    "Zeigarnik Effect"
+                ];
+
+                var idx = 0;
+                var pos = 0;
+                var dir = 1; // 1 typing, -1 deleting
+                var pause = 0;
+
+                function tick() {
+                    var word = laws[idx % laws.length];
+                    if (pause > 0) {
+                        pause -= 1;
+                        requestAnimationFrame(tick);
+                        return;
+                    }
+
+                    pos += dir;
+                    if (pos >= word.length) {
+                        pos = word.length;
+                        dir = -1;
+                        pause = 30; // hold
+                    } else if (pos <= 0) {
+                        pos = 0;
+                        dir = 1;
+                        idx += 1;
+                        pause = 10; // gap
+                    }
+
+                    target.textContent = word.slice(0, pos);
+                    var speed = dir === 1 ? 2 : 1; // delete faster
+                    window.setTimeout(tick, 28 * speed);
+                }
+
+                tick();
+            })();
+        </script>
     </body>
 </html>
